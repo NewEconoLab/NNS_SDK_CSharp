@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>NewEconoLabs</Authors>
+    <Company>NewEconoLabs</Company>
+    <PackageId>NNS.sdk</PackageId>
+    <Product>NNS.sdk</Product>
+    <Description>A NNS development toolkit</Description>
+    <Copyright>MIT</Copyright>
+    <AssemblyName>NNS_SDK_CSharp</AssemblyName>
+    <RepositoryUrl>https://github.com/NewEconoLab/</RepositoryUrl>
+    <PackageProjectUrl>https://nel.group/</PackageProjectUrl>
+    <RepositoryType>Github</RepositoryType>
+    <PackageTags>Neo,Blockchain,Smart,Contract,SDK,NewEconoLabs,NNS,Name,Domain</PackageTags>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Version>1.0.0</Version>
+    <PackageReleaseNotes></PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Neo.sdk.thin" Version="1.0.2" />
+  </ItemGroup>
+</Project>
