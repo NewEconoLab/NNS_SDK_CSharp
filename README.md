@@ -9,17 +9,17 @@ a NNS contract function SDK for .net framwork and .net core
 
 
 ## NuGet
-[Nuget Page](https://www.nuget.org/packages/NNS.sdk/1.0.0)
+[Nuget Page](https://www.nuget.org/packages/NNS.sdk/)
 
 ### Package Manager
 
 ```
-Install-Package NNS.sdk -Version 1.0.0
+Install-Package NNS.sdk -Version 1.0.2
 ```
 
 ### .NET CLI
 
 
 ```
-dotnet add package NNS.sdk --version 1.0.0
+dotnet add package NNS.sdk --version 1.0.2
 ```
