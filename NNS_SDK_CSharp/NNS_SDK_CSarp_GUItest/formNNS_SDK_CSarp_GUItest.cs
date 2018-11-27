@@ -225,13 +225,79 @@ namespace NNS_SDK_CSarp_GUItest
 
             lbTX.Items.Add(nNS_Resolver.SetResolverData(txtDoAddr.Text, txtDomain.Text, txtSubDomainForResolve.Text, txtResolveAddr.Text));
         }
-
-
-
-
-
         #endregion
 
+        #region 业务代码-NNS DEX 一口价出售
+        private void butGetNNCbalance_Click(object sender, EventArgs e)
+        {
+            NNS_SDK_CSharp.NNS_DEX_fixedSelling nNS_DEX_FixedSelling = new NNS_SDK_CSharp.NNS_DEX_fixedSelling(neoAddress, txtNNS_DEX_fixedSellingHash.Text, nelApiUrl);
 
+            labGetNNCbalance.Text = nNS_DEX_FixedSelling.getNNCbanlance(txtNNChash.Text, txtDoAddr.Text).ToString();
+        }
+
+        private void butGetDEXfixedSellingBalance_Click(object sender, EventArgs e)
+        {
+            NNS_SDK_CSharp.NNS_DEX_fixedSelling nNS_DEX_FixedSelling = new NNS_SDK_CSharp.NNS_DEX_fixedSelling(neoAddress, txtNNS_DEX_fixedSellingHash.Text, nelApiUrl);
+
+            labGetDEXfixedSellingBalance.Text = nNS_DEX_FixedSelling.getDEXfixedSellingBalance(txtDoAddr.Text).ToString();
+        }
+
+        private void butDoNNCinStep0_Click(object sender, EventArgs e)
+        {
+            NNS_SDK_CSharp.NNS_DEX_fixedSelling nNS_DEX_FixedSelling = new NNS_SDK_CSharp.NNS_DEX_fixedSelling(neoAddress, txtNNS_DEX_fixedSellingHash.Text, nelApiUrl);
+
+            lbTX.Items.Add(nNS_DEX_FixedSelling.doNNCinStep0(txtNNChash.Text, txtDoAddr.Text, decimal.Parse(txtDoNNCinStep0.Text)));
+        }
+
+        private void butDoNNCinStep1_Click(object sender, EventArgs e)
+        {
+            NNS_SDK_CSharp.NNS_DEX_fixedSelling nNS_DEX_FixedSelling = new NNS_SDK_CSharp.NNS_DEX_fixedSelling(neoAddress, txtNNS_DEX_fixedSellingHash.Text, nelApiUrl);
+
+            lbTX.Items.Add(nNS_DEX_FixedSelling.doNNCinStep1((string)lbTX.SelectedItem).Replace("0x", ""));
+        }
+
+        private void butNNCout_Click(object sender, EventArgs e)
+        {
+            NNS_SDK_CSharp.NNS_DEX_fixedSelling nNS_DEX_FixedSelling = new NNS_SDK_CSharp.NNS_DEX_fixedSelling(neoAddress, txtNNS_DEX_fixedSellingHash.Text, nelApiUrl);
+
+            lbTX.Items.Add(nNS_DEX_FixedSelling.doNNCout(txtDoAddr.Text, decimal.Parse(txtNNCout.Text)));
+        }
+
+        private void butNNCoutAll_Click(object sender, EventArgs e)
+        {
+            NNS_SDK_CSharp.NNS_DEX_fixedSelling nNS_DEX_FixedSelling = new NNS_SDK_CSharp.NNS_DEX_fixedSelling(neoAddress, txtNNS_DEX_fixedSellingHash.Text, nelApiUrl);
+
+            lbTX.Items.Add(nNS_DEX_FixedSelling.doNNCoutAll(txtDoAddr.Text));
+        }
+
+        private void butLaunch_Click(object sender, EventArgs e)
+        {
+            NNS_SDK_CSharp.NNS_DEX_fixedSelling nNS_DEX_FixedSelling = new NNS_SDK_CSharp.NNS_DEX_fixedSelling(neoAddress, txtNNS_DEX_fixedSellingHash.Text, nelApiUrl);
+
+            lbTX.Items.Add(nNS_DEX_FixedSelling.doLaunch(txtDomain.Text.Split('.').Reverse().ToArray(), decimal.Parse(txtLaunch.Text)));
+        }
+
+        private void butDiscontinue_Click(object sender, EventArgs e)
+        {
+            NNS_SDK_CSharp.NNS_DEX_fixedSelling nNS_DEX_FixedSelling = new NNS_SDK_CSharp.NNS_DEX_fixedSelling(neoAddress, txtNNS_DEX_fixedSellingHash.Text, nelApiUrl);
+
+            lbTX.Items.Add(nNS_DEX_FixedSelling.doDiscontinue(txtDomain.Text));
+        }
+
+        private void butDoBuy_Click(object sender, EventArgs e)
+        {
+            NNS_SDK_CSharp.NNS_DEX_fixedSelling nNS_DEX_FixedSelling = new NNS_SDK_CSharp.NNS_DEX_fixedSelling(neoAddress, txtNNS_DEX_fixedSellingHash.Text, nelApiUrl);
+
+            lbTX.Items.Add(nNS_DEX_FixedSelling.doBuy(txtDoAddr.Text, txtDomain.Text));
+        }
+
+        private void butGetFixedSellingInfo_Click(object sender, EventArgs e)
+        {
+            NNS_SDK_CSharp.NNS_DEX_fixedSelling nNS_DEX_FixedSelling = new NNS_SDK_CSharp.NNS_DEX_fixedSelling(neoAddress, txtNNS_DEX_fixedSellingHash.Text, nelApiUrl);
+
+            txtInfoShow.Text = nNS_DEX_FixedSelling.getFixedSellingInfo(txtDomain.Text);
+        }
+
+        #endregion
     }
 }

@@ -14,9 +14,10 @@
     <PackageProjectUrl>https://github.com/NewEconoLab/NNS_SDK_CSharp</PackageProjectUrl>
     <RepositoryType>Github</RepositoryType>
     <PackageTags>Neo,Blockchain,Smart,Contract,SDK,NewEconoLabs,NNS,Name,Domain</PackageTags>
-    <FileVersion>1.0.0.0</FileVersion>
-    <Version>1.0.0</Version>
-    <PackageReleaseNotes>C# class wrapper that implements the core methods of NNS parser, domain name center, and auction registrar</PackageReleaseNotes>
+    <FileVersion>1.0.1.0</FileVersion>
+    <Version>1.0.1</Version>
+    <PackageReleaseNotes>C# class wrapper that implements the core methods of NNS parser, domain name center, and auction registrar,add NNS_DEX_fixedSelling class</PackageReleaseNotes>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

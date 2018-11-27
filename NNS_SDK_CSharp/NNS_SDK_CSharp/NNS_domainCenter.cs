@@ -15,7 +15,7 @@ namespace NNS_SDK_CSharp
             cop = new contractOperate(neoAddressIn,contractHashIn,nelApiUrlIn);
         }
 
-        DateTime startTime = TimeZoneInfo.ConvertTime(new DateTime(1970, 1, 1), TimeZoneInfo.Local); // 当地时区
+        DateTime startTime = TimeZoneInfo.ConvertTime(new DateTime(1970, 1, 1, 8, 0, 0), TimeZoneInfo.Local); // 当地时区
 
         public string getOwnerInfo(string domain)
         {
