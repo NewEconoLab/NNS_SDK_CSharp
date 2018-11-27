@@ -11,12 +11,12 @@
     <Copyright>MIT</Copyright>
     <AssemblyName>NNS_SDK_CSharp</AssemblyName>
     <RepositoryUrl>https://github.com/NewEconoLab/</RepositoryUrl>
-    <PackageProjectUrl>https://nel.group/</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/NewEconoLab/NNS_SDK_CSharp</PackageProjectUrl>
     <RepositoryType>Github</RepositoryType>
     <PackageTags>Neo,Blockchain,Smart,Contract,SDK,NewEconoLabs,NNS,Name,Domain</PackageTags>
     <FileVersion>1.0.0.0</FileVersion>
     <Version>1.0.0</Version>
-    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageReleaseNotes>C# class wrapper that implements the core methods of NNS parser, domain name center, and auction registrar</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

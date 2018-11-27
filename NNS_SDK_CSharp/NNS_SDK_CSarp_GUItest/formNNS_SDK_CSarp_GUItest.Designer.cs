@@ -40,24 +40,10 @@
             this.txtTXIDshow = new System.Windows.Forms.TextBox();
             this.lbTX = new System.Windows.Forms.ListBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.labSarChash = new System.Windows.Forms.Label();
-            this.txtNNSresolverHash = new System.Windows.Forms.TextBox();
-            this.txtSubDomainForResolve = new System.Windows.Forms.TextBox();
-            this.txtResolveAddr = new System.Windows.Forms.TextBox();
-            this.butSetResolverData = new System.Windows.Forms.Button();
-            this.butResolve = new System.Windows.Forms.Button();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtNNScenterHash = new System.Windows.Forms.TextBox();
-            this.butOwnerSetResolver = new System.Windows.Forms.Button();
-            this.cbResolver = new System.Windows.Forms.ComboBox();
-            this.butOwnerSetRegister = new System.Windows.Forms.Button();
-            this.cbRegister = new System.Windows.Forms.ComboBox();
-            this.txtOwnerSetOwnerAddrTo = new System.Windows.Forms.TextBox();
-            this.butOwnerSetOwner = new System.Windows.Forms.Button();
-            this.butGetOwnerInfo = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.txtMinuteOfDay = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtNNSRegisterSellhash = new System.Windows.Forms.TextBox();
             this.pbTimerForDay = new System.Windows.Forms.ProgressBar();
             this.labTimeForDay = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -82,6 +68,23 @@
             this.butCGASin_1 = new System.Windows.Forms.Button();
             this.labBanlance = new System.Windows.Forms.Label();
             this.butGetBanlance = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtNNScenterHash = new System.Windows.Forms.TextBox();
+            this.butOwnerSetResolver = new System.Windows.Forms.Button();
+            this.cbResolver = new System.Windows.Forms.ComboBox();
+            this.butOwnerSetRegister = new System.Windows.Forms.Button();
+            this.cbRegister = new System.Windows.Forms.ComboBox();
+            this.txtOwnerSetOwnerAddrTo = new System.Windows.Forms.TextBox();
+            this.butOwnerSetOwner = new System.Windows.Forms.Button();
+            this.butGetOwnerInfo = new System.Windows.Forms.Button();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.labSarChash = new System.Windows.Forms.Label();
+            this.txtNNSresolverHash = new System.Windows.Forms.TextBox();
+            this.txtSubDomainForResolve = new System.Windows.Forms.TextBox();
+            this.txtResolveAddr = new System.Windows.Forms.TextBox();
+            this.butSetResolverData = new System.Windows.Forms.Button();
+            this.butResolve = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.txtSubDomainOwnerAddr = new System.Windows.Forms.TextBox();
             this.txtSubDomain = new System.Windows.Forms.TextBox();
@@ -108,22 +111,19 @@
             this.butDoNNCinStep0 = new System.Windows.Forms.Button();
             this.labGetDEXfixedSellingBalance = new System.Windows.Forms.Label();
             this.butGetDEXfixedSellingBalance = new System.Windows.Forms.Button();
-            this.labBlockCount = new System.Windows.Forms.Label();
-            this.timerOneSecond = new System.Windows.Forms.Timer(this.components);
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtCGAShash = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtNNChash = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtNNSRegisterSellhash = new System.Windows.Forms.TextBox();
-            this.txtMinuteOfDay = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtCGAShash = new System.Windows.Forms.TextBox();
+            this.labBlockCount = new System.Windows.Forms.Label();
+            this.timerOneSecond = new System.Windows.Forms.Timer(this.components);
             this.tabControl1.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            this.tabPage3.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage6.SuspendLayout();
@@ -155,7 +155,7 @@
             this.txtWIF.PasswordChar = '*';
             this.txtWIF.Size = new System.Drawing.Size(335, 21);
             this.txtWIF.TabIndex = 37;
-            this.txtWIF.Text = "KyzUeJKcEje56jAPCYFmQkEZKJXuyAh7UGhCxichAKgeNAMiu83T";
+            this.txtWIF.Text = "KwKoVVb83HMWKJbxtVaHsS5MRfJVZK3gHigJAcuyepMAVmUU2B94";
             this.txtWIF.TextChanged += new System.EventHandler(this.txtPriKey_TextChanged);
             // 
             // labPubKey
@@ -237,175 +237,6 @@
             this.tabControl1.Size = new System.Drawing.Size(505, 482);
             this.tabControl1.TabIndex = 43;
             // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.labSarChash);
-            this.tabPage5.Controls.Add(this.txtNNSresolverHash);
-            this.tabPage5.Controls.Add(this.txtSubDomainForResolve);
-            this.tabPage5.Controls.Add(this.txtResolveAddr);
-            this.tabPage5.Controls.Add(this.butSetResolverData);
-            this.tabPage5.Controls.Add(this.butResolve);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(497, 456);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "解析器";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // labSarChash
-            // 
-            this.labSarChash.AutoSize = true;
-            this.labSarChash.Location = new System.Drawing.Point(75, 15);
-            this.labSarChash.Name = "labSarChash";
-            this.labSarChash.Size = new System.Drawing.Size(53, 12);
-            this.labSarChash.TabIndex = 40;
-            this.labSarChash.Text = "合约HASH";
-            // 
-            // txtNNSresolverHash
-            // 
-            this.txtNNSresolverHash.Location = new System.Drawing.Point(153, 12);
-            this.txtNNSresolverHash.Name = "txtNNSresolverHash";
-            this.txtNNSresolverHash.Size = new System.Drawing.Size(256, 21);
-            this.txtNNSresolverHash.TabIndex = 39;
-            this.txtNNSresolverHash.Text = "6e2aea28af9c5febea0774759b1b76398e3167f1";
-            // 
-            // txtSubDomainForResolve
-            // 
-            this.txtSubDomainForResolve.Location = new System.Drawing.Point(19, 117);
-            this.txtSubDomainForResolve.Name = "txtSubDomainForResolve";
-            this.txtSubDomainForResolve.Size = new System.Drawing.Size(266, 21);
-            this.txtSubDomainForResolve.TabIndex = 38;
-            // 
-            // txtResolveAddr
-            // 
-            this.txtResolveAddr.Location = new System.Drawing.Point(19, 90);
-            this.txtResolveAddr.Name = "txtResolveAddr";
-            this.txtResolveAddr.Size = new System.Drawing.Size(266, 21);
-            this.txtResolveAddr.TabIndex = 37;
-            // 
-            // butSetResolverData
-            // 
-            this.butSetResolverData.Location = new System.Drawing.Point(300, 90);
-            this.butSetResolverData.Name = "butSetResolverData";
-            this.butSetResolverData.Size = new System.Drawing.Size(158, 23);
-            this.butSetResolverData.TabIndex = 36;
-            this.butSetResolverData.Text = "设置解析地址";
-            this.butSetResolverData.UseVisualStyleBackColor = true;
-            this.butSetResolverData.Click += new System.EventHandler(this.butSetResolverData_Click);
-            // 
-            // butResolve
-            // 
-            this.butResolve.Location = new System.Drawing.Point(300, 49);
-            this.butResolve.Name = "butResolve";
-            this.butResolve.Size = new System.Drawing.Size(158, 23);
-            this.butResolve.TabIndex = 35;
-            this.butResolve.Text = "获取解析地址";
-            this.butResolve.UseVisualStyleBackColor = true;
-            this.butResolve.Click += new System.EventHandler(this.butResolve_Click);
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.label1);
-            this.tabPage3.Controls.Add(this.txtNNScenterHash);
-            this.tabPage3.Controls.Add(this.butOwnerSetResolver);
-            this.tabPage3.Controls.Add(this.cbResolver);
-            this.tabPage3.Controls.Add(this.butOwnerSetRegister);
-            this.tabPage3.Controls.Add(this.cbRegister);
-            this.tabPage3.Controls.Add(this.txtOwnerSetOwnerAddrTo);
-            this.tabPage3.Controls.Add(this.butOwnerSetOwner);
-            this.tabPage3.Controls.Add(this.butGetOwnerInfo);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(497, 456);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "域名中心";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(76, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 12);
-            this.label1.TabIndex = 42;
-            this.label1.Text = "合约HASH";
-            // 
-            // txtNNScenterHash
-            // 
-            this.txtNNScenterHash.Location = new System.Drawing.Point(154, 18);
-            this.txtNNScenterHash.Name = "txtNNScenterHash";
-            this.txtNNScenterHash.Size = new System.Drawing.Size(256, 21);
-            this.txtNNScenterHash.TabIndex = 41;
-            this.txtNNScenterHash.Text = "348387116c4a75e420663277d9c02049907128c7";
-            // 
-            // butOwnerSetResolver
-            // 
-            this.butOwnerSetResolver.Location = new System.Drawing.Point(309, 196);
-            this.butOwnerSetResolver.Name = "butOwnerSetResolver";
-            this.butOwnerSetResolver.Size = new System.Drawing.Size(158, 23);
-            this.butOwnerSetResolver.TabIndex = 37;
-            this.butOwnerSetResolver.Text = "设置解析器";
-            this.butOwnerSetResolver.UseVisualStyleBackColor = true;
-            this.butOwnerSetResolver.Click += new System.EventHandler(this.butOwnerSetResolver_Click);
-            // 
-            // cbResolver
-            // 
-            this.cbResolver.FormattingEnabled = true;
-            this.cbResolver.Items.AddRange(new object[] {
-            "6e2aea28af9c5febea0774759b1b76398e3167f1"});
-            this.cbResolver.Location = new System.Drawing.Point(23, 196);
-            this.cbResolver.Name = "cbResolver";
-            this.cbResolver.Size = new System.Drawing.Size(266, 20);
-            this.cbResolver.TabIndex = 36;
-            // 
-            // butOwnerSetRegister
-            // 
-            this.butOwnerSetRegister.Location = new System.Drawing.Point(309, 159);
-            this.butOwnerSetRegister.Name = "butOwnerSetRegister";
-            this.butOwnerSetRegister.Size = new System.Drawing.Size(158, 23);
-            this.butOwnerSetRegister.TabIndex = 35;
-            this.butOwnerSetRegister.Text = "设置注册器";
-            this.butOwnerSetRegister.UseVisualStyleBackColor = true;
-            this.butOwnerSetRegister.Click += new System.EventHandler(this.butOwnerSetRegister_Click);
-            // 
-            // cbRegister
-            // 
-            this.cbRegister.FormattingEnabled = true;
-            this.cbRegister.Items.AddRange(new object[] {
-            "53e26c4b30f2be5bde66ec2c33cadafb93bc9318"});
-            this.cbRegister.Location = new System.Drawing.Point(23, 159);
-            this.cbRegister.Name = "cbRegister";
-            this.cbRegister.Size = new System.Drawing.Size(266, 20);
-            this.cbRegister.TabIndex = 34;
-            // 
-            // txtOwnerSetOwnerAddrTo
-            // 
-            this.txtOwnerSetOwnerAddrTo.Location = new System.Drawing.Point(23, 121);
-            this.txtOwnerSetOwnerAddrTo.Name = "txtOwnerSetOwnerAddrTo";
-            this.txtOwnerSetOwnerAddrTo.Size = new System.Drawing.Size(266, 21);
-            this.txtOwnerSetOwnerAddrTo.TabIndex = 33;
-            this.txtOwnerSetOwnerAddrTo.Text = "ASBhJFN3XiDu38EdEQyMY3N2XwGh1gd5WW";
-            // 
-            // butOwnerSetOwner
-            // 
-            this.butOwnerSetOwner.Location = new System.Drawing.Point(309, 119);
-            this.butOwnerSetOwner.Name = "butOwnerSetOwner";
-            this.butOwnerSetOwner.Size = new System.Drawing.Size(158, 23);
-            this.butOwnerSetOwner.TabIndex = 32;
-            this.butOwnerSetOwner.Text = "更改域名所有者";
-            this.butOwnerSetOwner.UseVisualStyleBackColor = true;
-            this.butOwnerSetOwner.Click += new System.EventHandler(this.butOwnerSetOwner_Click);
-            // 
-            // butGetOwnerInfo
-            // 
-            this.butGetOwnerInfo.Location = new System.Drawing.Point(309, 77);
-            this.butGetOwnerInfo.Name = "butGetOwnerInfo";
-            this.butGetOwnerInfo.Size = new System.Drawing.Size(158, 23);
-            this.butGetOwnerInfo.TabIndex = 17;
-            this.butGetOwnerInfo.Text = "查询所有者信息";
-            this.butGetOwnerInfo.UseVisualStyleBackColor = true;
-            this.butGetOwnerInfo.Click += new System.EventHandler(this.butGetOwnerInfo_Click);
-            // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.txtMinuteOfDay);
@@ -423,6 +254,31 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "拍卖注册器";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // txtMinuteOfDay
+            // 
+            this.txtMinuteOfDay.Location = new System.Drawing.Point(16, 217);
+            this.txtMinuteOfDay.Name = "txtMinuteOfDay";
+            this.txtMinuteOfDay.Size = new System.Drawing.Size(77, 21);
+            this.txtMinuteOfDay.TabIndex = 43;
+            this.txtMinuteOfDay.Text = "5";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(72, 7);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 12);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "合约HASH";
+            // 
+            // txtNNSRegisterSellhash
+            // 
+            this.txtNNSRegisterSellhash.Location = new System.Drawing.Point(150, 4);
+            this.txtNNSRegisterSellhash.Name = "txtNNSRegisterSellhash";
+            this.txtNNSRegisterSellhash.Size = new System.Drawing.Size(256, 21);
+            this.txtNNSRegisterSellhash.TabIndex = 41;
+            this.txtNNSRegisterSellhash.Text = "5fd8c2aed0eec0fa103f6fba16748b453baf5b2e";
             // 
             // pbTimerForDay
             // 
@@ -663,6 +519,175 @@
             this.butGetBanlance.Text = "获取竞拍账户余额";
             this.butGetBanlance.UseVisualStyleBackColor = true;
             this.butGetBanlance.Click += new System.EventHandler(this.butGetBanlance_Click);
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.label1);
+            this.tabPage3.Controls.Add(this.txtNNScenterHash);
+            this.tabPage3.Controls.Add(this.butOwnerSetResolver);
+            this.tabPage3.Controls.Add(this.cbResolver);
+            this.tabPage3.Controls.Add(this.butOwnerSetRegister);
+            this.tabPage3.Controls.Add(this.cbRegister);
+            this.tabPage3.Controls.Add(this.txtOwnerSetOwnerAddrTo);
+            this.tabPage3.Controls.Add(this.butOwnerSetOwner);
+            this.tabPage3.Controls.Add(this.butGetOwnerInfo);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(497, 456);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "域名中心";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(76, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 12);
+            this.label1.TabIndex = 42;
+            this.label1.Text = "合约HASH";
+            // 
+            // txtNNScenterHash
+            // 
+            this.txtNNScenterHash.Location = new System.Drawing.Point(154, 18);
+            this.txtNNScenterHash.Name = "txtNNScenterHash";
+            this.txtNNScenterHash.Size = new System.Drawing.Size(256, 21);
+            this.txtNNScenterHash.TabIndex = 41;
+            this.txtNNScenterHash.Text = "348387116c4a75e420663277d9c02049907128c7";
+            // 
+            // butOwnerSetResolver
+            // 
+            this.butOwnerSetResolver.Location = new System.Drawing.Point(309, 196);
+            this.butOwnerSetResolver.Name = "butOwnerSetResolver";
+            this.butOwnerSetResolver.Size = new System.Drawing.Size(158, 23);
+            this.butOwnerSetResolver.TabIndex = 37;
+            this.butOwnerSetResolver.Text = "设置解析器";
+            this.butOwnerSetResolver.UseVisualStyleBackColor = true;
+            this.butOwnerSetResolver.Click += new System.EventHandler(this.butOwnerSetResolver_Click);
+            // 
+            // cbResolver
+            // 
+            this.cbResolver.FormattingEnabled = true;
+            this.cbResolver.Items.AddRange(new object[] {
+            "6e2aea28af9c5febea0774759b1b76398e3167f1"});
+            this.cbResolver.Location = new System.Drawing.Point(23, 196);
+            this.cbResolver.Name = "cbResolver";
+            this.cbResolver.Size = new System.Drawing.Size(266, 20);
+            this.cbResolver.TabIndex = 36;
+            // 
+            // butOwnerSetRegister
+            // 
+            this.butOwnerSetRegister.Location = new System.Drawing.Point(309, 159);
+            this.butOwnerSetRegister.Name = "butOwnerSetRegister";
+            this.butOwnerSetRegister.Size = new System.Drawing.Size(158, 23);
+            this.butOwnerSetRegister.TabIndex = 35;
+            this.butOwnerSetRegister.Text = "设置注册器";
+            this.butOwnerSetRegister.UseVisualStyleBackColor = true;
+            this.butOwnerSetRegister.Click += new System.EventHandler(this.butOwnerSetRegister_Click);
+            // 
+            // cbRegister
+            // 
+            this.cbRegister.FormattingEnabled = true;
+            this.cbRegister.Items.AddRange(new object[] {
+            "53e26c4b30f2be5bde66ec2c33cadafb93bc9318"});
+            this.cbRegister.Location = new System.Drawing.Point(23, 159);
+            this.cbRegister.Name = "cbRegister";
+            this.cbRegister.Size = new System.Drawing.Size(266, 20);
+            this.cbRegister.TabIndex = 34;
+            // 
+            // txtOwnerSetOwnerAddrTo
+            // 
+            this.txtOwnerSetOwnerAddrTo.Location = new System.Drawing.Point(23, 121);
+            this.txtOwnerSetOwnerAddrTo.Name = "txtOwnerSetOwnerAddrTo";
+            this.txtOwnerSetOwnerAddrTo.Size = new System.Drawing.Size(266, 21);
+            this.txtOwnerSetOwnerAddrTo.TabIndex = 33;
+            this.txtOwnerSetOwnerAddrTo.Text = "ASBhJFN3XiDu38EdEQyMY3N2XwGh1gd5WW";
+            // 
+            // butOwnerSetOwner
+            // 
+            this.butOwnerSetOwner.Location = new System.Drawing.Point(309, 119);
+            this.butOwnerSetOwner.Name = "butOwnerSetOwner";
+            this.butOwnerSetOwner.Size = new System.Drawing.Size(158, 23);
+            this.butOwnerSetOwner.TabIndex = 32;
+            this.butOwnerSetOwner.Text = "更改域名所有者";
+            this.butOwnerSetOwner.UseVisualStyleBackColor = true;
+            this.butOwnerSetOwner.Click += new System.EventHandler(this.butOwnerSetOwner_Click);
+            // 
+            // butGetOwnerInfo
+            // 
+            this.butGetOwnerInfo.Location = new System.Drawing.Point(309, 77);
+            this.butGetOwnerInfo.Name = "butGetOwnerInfo";
+            this.butGetOwnerInfo.Size = new System.Drawing.Size(158, 23);
+            this.butGetOwnerInfo.TabIndex = 17;
+            this.butGetOwnerInfo.Text = "查询所有者信息";
+            this.butGetOwnerInfo.UseVisualStyleBackColor = true;
+            this.butGetOwnerInfo.Click += new System.EventHandler(this.butGetOwnerInfo_Click);
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.labSarChash);
+            this.tabPage5.Controls.Add(this.txtNNSresolverHash);
+            this.tabPage5.Controls.Add(this.txtSubDomainForResolve);
+            this.tabPage5.Controls.Add(this.txtResolveAddr);
+            this.tabPage5.Controls.Add(this.butSetResolverData);
+            this.tabPage5.Controls.Add(this.butResolve);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(497, 456);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "解析器";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // labSarChash
+            // 
+            this.labSarChash.AutoSize = true;
+            this.labSarChash.Location = new System.Drawing.Point(75, 15);
+            this.labSarChash.Name = "labSarChash";
+            this.labSarChash.Size = new System.Drawing.Size(53, 12);
+            this.labSarChash.TabIndex = 40;
+            this.labSarChash.Text = "合约HASH";
+            // 
+            // txtNNSresolverHash
+            // 
+            this.txtNNSresolverHash.Location = new System.Drawing.Point(153, 12);
+            this.txtNNSresolverHash.Name = "txtNNSresolverHash";
+            this.txtNNSresolverHash.Size = new System.Drawing.Size(256, 21);
+            this.txtNNSresolverHash.TabIndex = 39;
+            this.txtNNSresolverHash.Text = "6e2aea28af9c5febea0774759b1b76398e3167f1";
+            // 
+            // txtSubDomainForResolve
+            // 
+            this.txtSubDomainForResolve.Location = new System.Drawing.Point(19, 117);
+            this.txtSubDomainForResolve.Name = "txtSubDomainForResolve";
+            this.txtSubDomainForResolve.Size = new System.Drawing.Size(266, 21);
+            this.txtSubDomainForResolve.TabIndex = 38;
+            // 
+            // txtResolveAddr
+            // 
+            this.txtResolveAddr.Location = new System.Drawing.Point(19, 90);
+            this.txtResolveAddr.Name = "txtResolveAddr";
+            this.txtResolveAddr.Size = new System.Drawing.Size(266, 21);
+            this.txtResolveAddr.TabIndex = 37;
+            // 
+            // butSetResolverData
+            // 
+            this.butSetResolverData.Location = new System.Drawing.Point(300, 90);
+            this.butSetResolverData.Name = "butSetResolverData";
+            this.butSetResolverData.Size = new System.Drawing.Size(158, 23);
+            this.butSetResolverData.TabIndex = 36;
+            this.butSetResolverData.Text = "设置解析地址";
+            this.butSetResolverData.UseVisualStyleBackColor = true;
+            this.butSetResolverData.Click += new System.EventHandler(this.butSetResolverData_Click);
+            // 
+            // butResolve
+            // 
+            this.butResolve.Location = new System.Drawing.Point(300, 49);
+            this.butResolve.Name = "butResolve";
+            this.butResolve.Size = new System.Drawing.Size(158, 23);
+            this.butResolve.TabIndex = 35;
+            this.butResolve.Text = "获取解析地址";
+            this.butResolve.UseVisualStyleBackColor = true;
+            this.butResolve.Click += new System.EventHandler(this.butResolve_Click);
             // 
             // tabPage4
             // 
@@ -912,22 +937,6 @@
             this.butGetDEXfixedSellingBalance.Text = "获取账户余额";
             this.butGetDEXfixedSellingBalance.UseVisualStyleBackColor = true;
             // 
-            // labBlockCount
-            // 
-            this.labBlockCount.AutoSize = true;
-            this.labBlockCount.Font = new System.Drawing.Font("宋体", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labBlockCount.Location = new System.Drawing.Point(805, 33);
-            this.labBlockCount.Name = "labBlockCount";
-            this.labBlockCount.Size = new System.Drawing.Size(264, 38);
-            this.labBlockCount.TabIndex = 44;
-            this.labBlockCount.Text = "labBlockCount";
-            // 
-            // timerOneSecond
-            // 
-            this.timerOneSecond.Enabled = true;
-            this.timerOneSecond.Interval = 1000;
-            this.timerOneSecond.Tick += new System.EventHandler(this.timerOneSecond_Tick);
-            // 
             // tabPage7
             // 
             this.tabPage7.Controls.Add(this.label3);
@@ -940,23 +949,6 @@
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "设置";
             this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(39, 32);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 12);
-            this.label2.TabIndex = 44;
-            this.label2.Text = "CGAS合约HASH";
-            // 
-            // txtCGAShash
-            // 
-            this.txtCGAShash.Location = new System.Drawing.Point(141, 29);
-            this.txtCGAShash.Name = "txtCGAShash";
-            this.txtCGAShash.Size = new System.Drawing.Size(256, 21);
-            this.txtCGAShash.TabIndex = 43;
-            this.txtCGAShash.Text = "74f2dc36a68fdc4682034178eb2220729231db76";
             // 
             // label3
             // 
@@ -975,30 +967,38 @@
             this.txtNNChash.TabIndex = 45;
             this.txtNNChash.Text = "fc732edee1efdf968c23c20a9628eaa5a6ccb934";
             // 
-            // label4
+            // label2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(72, 7);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 12);
-            this.label4.TabIndex = 42;
-            this.label4.Text = "合约HASH";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(39, 32);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(77, 12);
+            this.label2.TabIndex = 44;
+            this.label2.Text = "CGAS合约HASH";
             // 
-            // txtNNSRegisterSellhash
+            // txtCGAShash
             // 
-            this.txtNNSRegisterSellhash.Location = new System.Drawing.Point(150, 4);
-            this.txtNNSRegisterSellhash.Name = "txtNNSRegisterSellhash";
-            this.txtNNSRegisterSellhash.Size = new System.Drawing.Size(256, 21);
-            this.txtNNSRegisterSellhash.TabIndex = 41;
-            this.txtNNSRegisterSellhash.Text = "5fd8c2aed0eec0fa103f6fba16748b453baf5b2e";
+            this.txtCGAShash.Location = new System.Drawing.Point(141, 29);
+            this.txtCGAShash.Name = "txtCGAShash";
+            this.txtCGAShash.Size = new System.Drawing.Size(256, 21);
+            this.txtCGAShash.TabIndex = 43;
+            this.txtCGAShash.Text = "74f2dc36a68fdc4682034178eb2220729231db76";
             // 
-            // txtMinuteOfDay
+            // labBlockCount
             // 
-            this.txtMinuteOfDay.Location = new System.Drawing.Point(16, 217);
-            this.txtMinuteOfDay.Name = "txtMinuteOfDay";
-            this.txtMinuteOfDay.Size = new System.Drawing.Size(77, 21);
-            this.txtMinuteOfDay.TabIndex = 43;
-            this.txtMinuteOfDay.Text = "5";
+            this.labBlockCount.AutoSize = true;
+            this.labBlockCount.Font = new System.Drawing.Font("宋体", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labBlockCount.Location = new System.Drawing.Point(805, 33);
+            this.labBlockCount.Name = "labBlockCount";
+            this.labBlockCount.Size = new System.Drawing.Size(264, 38);
+            this.labBlockCount.TabIndex = 44;
+            this.labBlockCount.Text = "labBlockCount";
+            // 
+            // timerOneSecond
+            // 
+            this.timerOneSecond.Enabled = true;
+            this.timerOneSecond.Interval = 1000;
+            this.timerOneSecond.Tick += new System.EventHandler(this.timerOneSecond_Tick);
             // 
             // formNNS_SDK_CSarp_GUItest
             // 
@@ -1021,16 +1021,16 @@
             this.Text = "NNS_SDK_CSarp_GUItest";
             this.Load += new System.EventHandler(this.formNNS_SDK_CSarp_GUItest_Load);
             this.tabControl1.ResumeLayout(false);
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.tabPage2.ResumeLayout(false);
