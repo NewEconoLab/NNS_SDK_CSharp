@@ -40,6 +40,26 @@
             this.txtTXIDshow = new System.Windows.Forms.TextBox();
             this.lbTX = new System.Windows.Forms.ListBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtNNS_DEX_fixedSellingHash = new System.Windows.Forms.TextBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.butDoBuy = new System.Windows.Forms.Button();
+            this.butDiscontinue = new System.Windows.Forms.Button();
+            this.butGetFixedSellingInfo = new System.Windows.Forms.Button();
+            this.txtLaunch = new System.Windows.Forms.TextBox();
+            this.butLaunch = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.butNNCoutAll = new System.Windows.Forms.Button();
+            this.labGetNNCbalance = new System.Windows.Forms.Label();
+            this.butGetNNCbalance = new System.Windows.Forms.Button();
+            this.txtNNCout = new System.Windows.Forms.TextBox();
+            this.butNNCout = new System.Windows.Forms.Button();
+            this.butDoNNCinStep1 = new System.Windows.Forms.Button();
+            this.txtDoNNCinStep0 = new System.Windows.Forms.TextBox();
+            this.butDoNNCinStep0 = new System.Windows.Forms.Button();
+            this.labGetDEXfixedSellingBalance = new System.Windows.Forms.Label();
+            this.butGetDEXfixedSellingBalance = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.txtMinuteOfDay = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -93,24 +113,6 @@
             this.butRevoke = new System.Windows.Forms.Button();
             this.butGetCreditInfo = new System.Windows.Forms.Button();
             this.butDoAuthenticate = new System.Windows.Forms.Button();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.butDoBuy = new System.Windows.Forms.Button();
-            this.butDiscontinue = new System.Windows.Forms.Button();
-            this.butGetFixedSellingInfo = new System.Windows.Forms.Button();
-            this.txtLaunch = new System.Windows.Forms.TextBox();
-            this.butLaunch = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.butNNCoutAll = new System.Windows.Forms.Button();
-            this.labGetNNCbalance = new System.Windows.Forms.Label();
-            this.butGetNNCbalance = new System.Windows.Forms.Button();
-            this.txtNNCout = new System.Windows.Forms.TextBox();
-            this.butNNCout = new System.Windows.Forms.Button();
-            this.butDoNNCinStep1 = new System.Windows.Forms.Button();
-            this.txtDoNNCinStep0 = new System.Windows.Forms.TextBox();
-            this.butDoNNCinStep0 = new System.Windows.Forms.Button();
-            this.labGetDEXfixedSellingBalance = new System.Windows.Forms.Label();
-            this.butGetDEXfixedSellingBalance = new System.Windows.Forms.Button();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
             this.txtNNChash = new System.Windows.Forms.TextBox();
@@ -118,9 +120,10 @@
             this.txtCGAShash = new System.Windows.Forms.TextBox();
             this.labBlockCount = new System.Windows.Forms.Label();
             this.timerOneSecond = new System.Windows.Forms.Timer(this.components);
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtNNS_DEX_fixedSellingHash = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
+            this.tabPage6.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -128,9 +131,6 @@
             this.tabPage5.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.tabPage6.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.tabPage7.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -238,6 +238,208 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(505, 482);
             this.tabControl1.TabIndex = 43;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.label5);
+            this.tabPage6.Controls.Add(this.txtNNS_DEX_fixedSellingHash);
+            this.tabPage6.Controls.Add(this.groupBox4);
+            this.tabPage6.Controls.Add(this.groupBox3);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(497, 456);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "一口价交易";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(57, 21);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(53, 12);
+            this.label5.TabIndex = 44;
+            this.label5.Text = "合约HASH";
+            // 
+            // txtNNS_DEX_fixedSellingHash
+            // 
+            this.txtNNS_DEX_fixedSellingHash.Location = new System.Drawing.Point(135, 18);
+            this.txtNNS_DEX_fixedSellingHash.Name = "txtNNS_DEX_fixedSellingHash";
+            this.txtNNS_DEX_fixedSellingHash.Size = new System.Drawing.Size(256, 21);
+            this.txtNNS_DEX_fixedSellingHash.TabIndex = 43;
+            this.txtNNS_DEX_fixedSellingHash.Text = "1b0ca9a908e07b20469917aed8d503049b420eeb";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.butDoBuy);
+            this.groupBox4.Controls.Add(this.butDiscontinue);
+            this.groupBox4.Controls.Add(this.butGetFixedSellingInfo);
+            this.groupBox4.Controls.Add(this.txtLaunch);
+            this.groupBox4.Controls.Add(this.butLaunch);
+            this.groupBox4.Location = new System.Drawing.Point(18, 269);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(461, 147);
+            this.groupBox4.TabIndex = 27;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "交易操作";
+            // 
+            // butDoBuy
+            // 
+            this.butDoBuy.Location = new System.Drawing.Point(90, 114);
+            this.butDoBuy.Name = "butDoBuy";
+            this.butDoBuy.Size = new System.Drawing.Size(114, 23);
+            this.butDoBuy.TabIndex = 17;
+            this.butDoBuy.Text = "购买";
+            this.butDoBuy.UseVisualStyleBackColor = true;
+            this.butDoBuy.Click += new System.EventHandler(this.butDoBuy_Click);
+            // 
+            // butDiscontinue
+            // 
+            this.butDiscontinue.Location = new System.Drawing.Point(90, 72);
+            this.butDiscontinue.Name = "butDiscontinue";
+            this.butDiscontinue.Size = new System.Drawing.Size(114, 23);
+            this.butDiscontinue.TabIndex = 16;
+            this.butDiscontinue.Text = "下架NNS";
+            this.butDiscontinue.UseVisualStyleBackColor = true;
+            this.butDiscontinue.Click += new System.EventHandler(this.butDiscontinue_Click);
+            // 
+            // butGetFixedSellingInfo
+            // 
+            this.butGetFixedSellingInfo.Location = new System.Drawing.Point(225, 31);
+            this.butGetFixedSellingInfo.Name = "butGetFixedSellingInfo";
+            this.butGetFixedSellingInfo.Size = new System.Drawing.Size(114, 23);
+            this.butGetFixedSellingInfo.TabIndex = 15;
+            this.butGetFixedSellingInfo.Text = "查询出售信息";
+            this.butGetFixedSellingInfo.UseVisualStyleBackColor = true;
+            this.butGetFixedSellingInfo.Click += new System.EventHandler(this.butGetFixedSellingInfo_Click);
+            // 
+            // txtLaunch
+            // 
+            this.txtLaunch.Location = new System.Drawing.Point(7, 33);
+            this.txtLaunch.Name = "txtLaunch";
+            this.txtLaunch.Size = new System.Drawing.Size(77, 21);
+            this.txtLaunch.TabIndex = 14;
+            // 
+            // butLaunch
+            // 
+            this.butLaunch.Location = new System.Drawing.Point(90, 31);
+            this.butLaunch.Name = "butLaunch";
+            this.butLaunch.Size = new System.Drawing.Size(114, 23);
+            this.butLaunch.TabIndex = 13;
+            this.butLaunch.Text = "上架NNS";
+            this.butLaunch.UseVisualStyleBackColor = true;
+            this.butLaunch.Click += new System.EventHandler(this.butLaunch_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.butNNCoutAll);
+            this.groupBox3.Controls.Add(this.labGetNNCbalance);
+            this.groupBox3.Controls.Add(this.butGetNNCbalance);
+            this.groupBox3.Controls.Add(this.txtNNCout);
+            this.groupBox3.Controls.Add(this.butNNCout);
+            this.groupBox3.Controls.Add(this.butDoNNCinStep1);
+            this.groupBox3.Controls.Add(this.txtDoNNCinStep0);
+            this.groupBox3.Controls.Add(this.butDoNNCinStep0);
+            this.groupBox3.Controls.Add(this.labGetDEXfixedSellingBalance);
+            this.groupBox3.Controls.Add(this.butGetDEXfixedSellingBalance);
+            this.groupBox3.Location = new System.Drawing.Point(18, 60);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(461, 185);
+            this.groupBox3.TabIndex = 26;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "操作余额账户";
+            // 
+            // butNNCoutAll
+            // 
+            this.butNNCoutAll.Location = new System.Drawing.Point(224, 142);
+            this.butNNCoutAll.Name = "butNNCoutAll";
+            this.butNNCoutAll.Size = new System.Drawing.Size(114, 23);
+            this.butNNCoutAll.TabIndex = 12;
+            this.butNNCoutAll.Text = "提取全部NNC";
+            this.butNNCoutAll.UseVisualStyleBackColor = true;
+            this.butNNCoutAll.Click += new System.EventHandler(this.butNNCoutAll_Click);
+            // 
+            // labGetNNCbalance
+            // 
+            this.labGetNNCbalance.AutoSize = true;
+            this.labGetNNCbalance.Location = new System.Drawing.Point(222, 20);
+            this.labGetNNCbalance.Name = "labGetNNCbalance";
+            this.labGetNNCbalance.Size = new System.Drawing.Size(101, 12);
+            this.labGetNNCbalance.TabIndex = 11;
+            this.labGetNNCbalance.Text = "labGetNNCbalance";
+            // 
+            // butGetNNCbalance
+            // 
+            this.butGetNNCbalance.Location = new System.Drawing.Point(90, 20);
+            this.butGetNNCbalance.Name = "butGetNNCbalance";
+            this.butGetNNCbalance.Size = new System.Drawing.Size(114, 23);
+            this.butGetNNCbalance.TabIndex = 10;
+            this.butGetNNCbalance.Text = "获取NNC余额";
+            this.butGetNNCbalance.UseVisualStyleBackColor = true;
+            this.butGetNNCbalance.Click += new System.EventHandler(this.butGetNNCbalance_Click);
+            // 
+            // txtNNCout
+            // 
+            this.txtNNCout.Location = new System.Drawing.Point(7, 142);
+            this.txtNNCout.Name = "txtNNCout";
+            this.txtNNCout.Size = new System.Drawing.Size(77, 21);
+            this.txtNNCout.TabIndex = 9;
+            // 
+            // butNNCout
+            // 
+            this.butNNCout.Location = new System.Drawing.Point(90, 142);
+            this.butNNCout.Name = "butNNCout";
+            this.butNNCout.Size = new System.Drawing.Size(114, 23);
+            this.butNNCout.TabIndex = 8;
+            this.butNNCout.Text = "提取NNC";
+            this.butNNCout.UseVisualStyleBackColor = true;
+            this.butNNCout.Click += new System.EventHandler(this.butNNCout_Click);
+            // 
+            // butDoNNCinStep1
+            // 
+            this.butDoNNCinStep1.Location = new System.Drawing.Point(90, 113);
+            this.butDoNNCinStep1.Name = "butDoNNCinStep1";
+            this.butDoNNCinStep1.Size = new System.Drawing.Size(114, 23);
+            this.butDoNNCinStep1.TabIndex = 7;
+            this.butDoNNCinStep1.Text = "充值（验证转账）";
+            this.butDoNNCinStep1.UseVisualStyleBackColor = true;
+            this.butDoNNCinStep1.Click += new System.EventHandler(this.butDoNNCinStep1_Click);
+            // 
+            // txtDoNNCinStep0
+            // 
+            this.txtDoNNCinStep0.Location = new System.Drawing.Point(7, 84);
+            this.txtDoNNCinStep0.Name = "txtDoNNCinStep0";
+            this.txtDoNNCinStep0.Size = new System.Drawing.Size(77, 21);
+            this.txtDoNNCinStep0.TabIndex = 6;
+            // 
+            // butDoNNCinStep0
+            // 
+            this.butDoNNCinStep0.Location = new System.Drawing.Point(90, 84);
+            this.butDoNNCinStep0.Name = "butDoNNCinStep0";
+            this.butDoNNCinStep0.Size = new System.Drawing.Size(114, 23);
+            this.butDoNNCinStep0.TabIndex = 4;
+            this.butDoNNCinStep0.Text = "NNC转账一口价交易";
+            this.butDoNNCinStep0.UseVisualStyleBackColor = true;
+            this.butDoNNCinStep0.Click += new System.EventHandler(this.butDoNNCinStep0_Click);
+            // 
+            // labGetDEXfixedSellingBalance
+            // 
+            this.labGetDEXfixedSellingBalance.AutoSize = true;
+            this.labGetDEXfixedSellingBalance.Location = new System.Drawing.Point(222, 55);
+            this.labGetDEXfixedSellingBalance.Name = "labGetDEXfixedSellingBalance";
+            this.labGetDEXfixedSellingBalance.Size = new System.Drawing.Size(173, 12);
+            this.labGetDEXfixedSellingBalance.TabIndex = 3;
+            this.labGetDEXfixedSellingBalance.Text = "labGetDEXfixedSellingBalance";
+            // 
+            // butGetDEXfixedSellingBalance
+            // 
+            this.butGetDEXfixedSellingBalance.Location = new System.Drawing.Point(90, 55);
+            this.butGetDEXfixedSellingBalance.Name = "butGetDEXfixedSellingBalance";
+            this.butGetDEXfixedSellingBalance.Size = new System.Drawing.Size(114, 23);
+            this.butGetDEXfixedSellingBalance.TabIndex = 2;
+            this.butGetDEXfixedSellingBalance.Text = "获取账户余额";
+            this.butGetDEXfixedSellingBalance.UseVisualStyleBackColor = true;
+            this.butGetDEXfixedSellingBalance.Click += new System.EventHandler(this.butGetDEXfixedSellingBalance_Click);
             // 
             // tabPage1
             // 
@@ -766,191 +968,6 @@
             this.butDoAuthenticate.Text = "认证";
             this.butDoAuthenticate.UseVisualStyleBackColor = true;
             // 
-            // tabPage6
-            // 
-            this.tabPage6.Controls.Add(this.label5);
-            this.tabPage6.Controls.Add(this.txtNNS_DEX_fixedSellingHash);
-            this.tabPage6.Controls.Add(this.groupBox4);
-            this.tabPage6.Controls.Add(this.groupBox3);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(497, 456);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "一口价交易";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.butDoBuy);
-            this.groupBox4.Controls.Add(this.butDiscontinue);
-            this.groupBox4.Controls.Add(this.butGetFixedSellingInfo);
-            this.groupBox4.Controls.Add(this.txtLaunch);
-            this.groupBox4.Controls.Add(this.butLaunch);
-            this.groupBox4.Location = new System.Drawing.Point(18, 269);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(461, 147);
-            this.groupBox4.TabIndex = 27;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "交易操作";
-            // 
-            // butDoBuy
-            // 
-            this.butDoBuy.Location = new System.Drawing.Point(90, 114);
-            this.butDoBuy.Name = "butDoBuy";
-            this.butDoBuy.Size = new System.Drawing.Size(114, 23);
-            this.butDoBuy.TabIndex = 17;
-            this.butDoBuy.Text = "购买";
-            this.butDoBuy.UseVisualStyleBackColor = true;
-            this.butDoBuy.Click += new System.EventHandler(this.butDoBuy_Click);
-            // 
-            // butDiscontinue
-            // 
-            this.butDiscontinue.Location = new System.Drawing.Point(90, 72);
-            this.butDiscontinue.Name = "butDiscontinue";
-            this.butDiscontinue.Size = new System.Drawing.Size(114, 23);
-            this.butDiscontinue.TabIndex = 16;
-            this.butDiscontinue.Text = "下架NNS";
-            this.butDiscontinue.UseVisualStyleBackColor = true;
-            this.butDiscontinue.Click += new System.EventHandler(this.butDiscontinue_Click);
-            // 
-            // butGetFixedSellingInfo
-            // 
-            this.butGetFixedSellingInfo.Location = new System.Drawing.Point(225, 31);
-            this.butGetFixedSellingInfo.Name = "butGetFixedSellingInfo";
-            this.butGetFixedSellingInfo.Size = new System.Drawing.Size(114, 23);
-            this.butGetFixedSellingInfo.TabIndex = 15;
-            this.butGetFixedSellingInfo.Text = "查询出售信息";
-            this.butGetFixedSellingInfo.UseVisualStyleBackColor = true;
-            this.butGetFixedSellingInfo.Click += new System.EventHandler(this.butGetFixedSellingInfo_Click);
-            // 
-            // txtLaunch
-            // 
-            this.txtLaunch.Location = new System.Drawing.Point(7, 33);
-            this.txtLaunch.Name = "txtLaunch";
-            this.txtLaunch.Size = new System.Drawing.Size(77, 21);
-            this.txtLaunch.TabIndex = 14;
-            // 
-            // butLaunch
-            // 
-            this.butLaunch.Location = new System.Drawing.Point(90, 31);
-            this.butLaunch.Name = "butLaunch";
-            this.butLaunch.Size = new System.Drawing.Size(114, 23);
-            this.butLaunch.TabIndex = 13;
-            this.butLaunch.Text = "上架NNS";
-            this.butLaunch.UseVisualStyleBackColor = true;
-            this.butLaunch.Click += new System.EventHandler(this.butLaunch_Click);
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.butNNCoutAll);
-            this.groupBox3.Controls.Add(this.labGetNNCbalance);
-            this.groupBox3.Controls.Add(this.butGetNNCbalance);
-            this.groupBox3.Controls.Add(this.txtNNCout);
-            this.groupBox3.Controls.Add(this.butNNCout);
-            this.groupBox3.Controls.Add(this.butDoNNCinStep1);
-            this.groupBox3.Controls.Add(this.txtDoNNCinStep0);
-            this.groupBox3.Controls.Add(this.butDoNNCinStep0);
-            this.groupBox3.Controls.Add(this.labGetDEXfixedSellingBalance);
-            this.groupBox3.Controls.Add(this.butGetDEXfixedSellingBalance);
-            this.groupBox3.Location = new System.Drawing.Point(18, 60);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(461, 185);
-            this.groupBox3.TabIndex = 26;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "操作余额账户";
-            // 
-            // butNNCoutAll
-            // 
-            this.butNNCoutAll.Location = new System.Drawing.Point(224, 142);
-            this.butNNCoutAll.Name = "butNNCoutAll";
-            this.butNNCoutAll.Size = new System.Drawing.Size(114, 23);
-            this.butNNCoutAll.TabIndex = 12;
-            this.butNNCoutAll.Text = "提取全部NNC";
-            this.butNNCoutAll.UseVisualStyleBackColor = true;
-            this.butNNCoutAll.Click += new System.EventHandler(this.butNNCoutAll_Click);
-            // 
-            // labGetNNCbalance
-            // 
-            this.labGetNNCbalance.AutoSize = true;
-            this.labGetNNCbalance.Location = new System.Drawing.Point(222, 20);
-            this.labGetNNCbalance.Name = "labGetNNCbalance";
-            this.labGetNNCbalance.Size = new System.Drawing.Size(101, 12);
-            this.labGetNNCbalance.TabIndex = 11;
-            this.labGetNNCbalance.Text = "labGetNNCbalance";
-            // 
-            // butGetNNCbalance
-            // 
-            this.butGetNNCbalance.Location = new System.Drawing.Point(90, 20);
-            this.butGetNNCbalance.Name = "butGetNNCbalance";
-            this.butGetNNCbalance.Size = new System.Drawing.Size(114, 23);
-            this.butGetNNCbalance.TabIndex = 10;
-            this.butGetNNCbalance.Text = "获取NNC余额";
-            this.butGetNNCbalance.UseVisualStyleBackColor = true;
-            this.butGetNNCbalance.Click += new System.EventHandler(this.butGetNNCbalance_Click);
-            // 
-            // txtNNCout
-            // 
-            this.txtNNCout.Location = new System.Drawing.Point(7, 142);
-            this.txtNNCout.Name = "txtNNCout";
-            this.txtNNCout.Size = new System.Drawing.Size(77, 21);
-            this.txtNNCout.TabIndex = 9;
-            // 
-            // butNNCout
-            // 
-            this.butNNCout.Location = new System.Drawing.Point(90, 142);
-            this.butNNCout.Name = "butNNCout";
-            this.butNNCout.Size = new System.Drawing.Size(114, 23);
-            this.butNNCout.TabIndex = 8;
-            this.butNNCout.Text = "提取NNC";
-            this.butNNCout.UseVisualStyleBackColor = true;
-            this.butNNCout.Click += new System.EventHandler(this.butNNCout_Click);
-            // 
-            // butDoNNCinStep1
-            // 
-            this.butDoNNCinStep1.Location = new System.Drawing.Point(90, 113);
-            this.butDoNNCinStep1.Name = "butDoNNCinStep1";
-            this.butDoNNCinStep1.Size = new System.Drawing.Size(114, 23);
-            this.butDoNNCinStep1.TabIndex = 7;
-            this.butDoNNCinStep1.Text = "充值（验证转账）";
-            this.butDoNNCinStep1.UseVisualStyleBackColor = true;
-            this.butDoNNCinStep1.Click += new System.EventHandler(this.butDoNNCinStep1_Click);
-            // 
-            // txtDoNNCinStep0
-            // 
-            this.txtDoNNCinStep0.Location = new System.Drawing.Point(7, 84);
-            this.txtDoNNCinStep0.Name = "txtDoNNCinStep0";
-            this.txtDoNNCinStep0.Size = new System.Drawing.Size(77, 21);
-            this.txtDoNNCinStep0.TabIndex = 6;
-            // 
-            // butDoNNCinStep0
-            // 
-            this.butDoNNCinStep0.Location = new System.Drawing.Point(90, 84);
-            this.butDoNNCinStep0.Name = "butDoNNCinStep0";
-            this.butDoNNCinStep0.Size = new System.Drawing.Size(114, 23);
-            this.butDoNNCinStep0.TabIndex = 4;
-            this.butDoNNCinStep0.Text = "NNC转账一口价交易";
-            this.butDoNNCinStep0.UseVisualStyleBackColor = true;
-            this.butDoNNCinStep0.Click += new System.EventHandler(this.butDoNNCinStep0_Click);
-            // 
-            // labGetDEXfixedSellingBalance
-            // 
-            this.labGetDEXfixedSellingBalance.AutoSize = true;
-            this.labGetDEXfixedSellingBalance.Location = new System.Drawing.Point(222, 55);
-            this.labGetDEXfixedSellingBalance.Name = "labGetDEXfixedSellingBalance";
-            this.labGetDEXfixedSellingBalance.Size = new System.Drawing.Size(173, 12);
-            this.labGetDEXfixedSellingBalance.TabIndex = 3;
-            this.labGetDEXfixedSellingBalance.Text = "labGetDEXfixedSellingBalance";
-            // 
-            // butGetDEXfixedSellingBalance
-            // 
-            this.butGetDEXfixedSellingBalance.Location = new System.Drawing.Point(90, 55);
-            this.butGetDEXfixedSellingBalance.Name = "butGetDEXfixedSellingBalance";
-            this.butGetDEXfixedSellingBalance.Size = new System.Drawing.Size(114, 23);
-            this.butGetDEXfixedSellingBalance.TabIndex = 2;
-            this.butGetDEXfixedSellingBalance.Text = "获取账户余额";
-            this.butGetDEXfixedSellingBalance.UseVisualStyleBackColor = true;
-            this.butGetDEXfixedSellingBalance.Click += new System.EventHandler(this.butGetDEXfixedSellingBalance_Click);
-            // 
             // tabPage7
             // 
             this.tabPage7.Controls.Add(this.label3);
@@ -1014,23 +1031,6 @@
             this.timerOneSecond.Interval = 1000;
             this.timerOneSecond.Tick += new System.EventHandler(this.timerOneSecond_Tick);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(57, 21);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 12);
-            this.label5.TabIndex = 44;
-            this.label5.Text = "合约HASH";
-            // 
-            // txtNNS_DEX_fixedSellingHash
-            // 
-            this.txtNNS_DEX_fixedSellingHash.Location = new System.Drawing.Point(135, 18);
-            this.txtNNS_DEX_fixedSellingHash.Name = "txtNNS_DEX_fixedSellingHash";
-            this.txtNNS_DEX_fixedSellingHash.Size = new System.Drawing.Size(256, 21);
-            this.txtNNS_DEX_fixedSellingHash.TabIndex = 43;
-            this.txtNNS_DEX_fixedSellingHash.Text = "7a64879a21b80e96a8bc91e0f07adc49b8f3521e";
-            // 
             // formNNS_SDK_CSarp_GUItest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -1052,6 +1052,12 @@
             this.Text = "NNS_SDK_CSarp_GUItest";
             this.Load += new System.EventHandler(this.formNNS_SDK_CSarp_GUItest_Load);
             this.tabControl1.ResumeLayout(false);
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -1065,12 +1071,6 @@
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage6.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
             this.ResumeLayout(false);
