@@ -23,3 +23,13 @@ Install-Package NNS.sdk -Version 1.0.2
 ```
 dotnet add package NNS.sdk --version 1.0.2
 ```
+
+
+## NEL NEO Block API URL
+
+
+### NEO Testnet: https://api.nel.group/api/testnet
+
+### NEO Mainnet: https://api.nel.group/api/mainnet
+
+### [API Doc](http://www.xiaoyaoji.cn/share/1H0gjTDtfk/)
